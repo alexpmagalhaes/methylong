@@ -149,14 +149,14 @@
                 "samtools-flagstat-pct-table.txt:md5,2b206e73550707faea58fd0c762ce9a2",
                 "samtools-flagstat-table.txt:md5,d85b96e27bcf53c9a7ad885e6b280ab3",
                 "homo_sapiens_ont.flagstat:md5,8664205b2167ad7783211565ee87d71c",
-                "homo_sapiens_DSS_DMLtest.txt:md5,26fe24ee84562c124ed0d5b5177902a7",
+                "homo_sapiens_DSS_DMLtest.txt:md5,dbad2312dd9d1803b22903cdd99d57c7",
                 "homo_sapiens_DSS_callDML.txt:md5,405ef2b191a7e47f577b003ebfec84e5",
                 "homo_sapiens_DSS_callDMR.txt:md5,68b329da9893e34099c7d8ad5cb9c940",
-                "homo_sapiens_preprocessed_1.bed:md5,e796ffcd505dd58303ecd51b29ab56b8",
+                "homo_sapiens_preprocessed_1.bed:md5,022abe6f9e2ab924f74483a82466e8c8",
                 "homo_sapiens_preprocessed_2.bed:md5,fe904d5fcf6e4f4820c7dfb2e498c9fe",
-                "homo_sapiens_1.bed:md5,28ce53958966d15c001654b17e89df2f",
-                "homo_sapiens_2.bed:md5,8edec65360f0a7cb29de869fc708236d",
-                "homo_sapiens_ungrouped.bed:md5,ea59b50c41a8f656a5ab5b965bddcdea",
+                "homo_sapiens_1.bed:md5,3351eb287affff7cbd27b894cf6dce13",
+                "homo_sapiens_2.bed:md5,a1bf7ec0f626bd791a51f8c818edb27e",
+                "homo_sapiens_ungrouped.bed:md5,756de30e9c2f293f5c0d38737cd4e40b",
                 "homo_sapiens.bed.gz:md5,401e2a44b482f96d3518c08b9c007936",
                 "homo_sapiens.fastq.gz:md5,9de5335e8d250471458bf563920a3186"
             ],
@@ -184,9 +184,9 @@
             ]
         ],
         "meta": {
-            "nf-test": "0.9.3",
-            "nextflow": "25.04.2"
+            "nf-test": "0.9.2",
+            "nextflow": "25.04.7"
         },
-        "timestamp": "2025-10-30T15:44:16.017769879"
+        "timestamp": "2025-12-05T10:18:51.472783331"
     }
 }
