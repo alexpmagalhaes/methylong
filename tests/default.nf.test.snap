@@ -154,7 +154,7 @@
                 "homo_sapiens_1.bed:md5,3351eb287affff7cbd27b894cf6dce13",
                 "homo_sapiens_2.bed:md5,a1bf7ec0f626bd791a51f8c818edb27e",
                 "homo_sapiens_ungrouped.bed:md5,756de30e9c2f293f5c0d38737cd4e40b",
-                "homo_sapiens_phased.vcf.gz:md5,62c7ae77da57926728a2d80b65c394b1",
+                "homo_sapiens_phased.vcf.gz:md5,193e0b37ea8289f7f4d42ff6cf53e3b0",
                 "homo_sapiens.bed.gz:md5,401e2a44b482f96d3518c08b9c007936",
                 "homo_sapiens.fastq.gz:md5,9de5335e8d250471458bf563920a3186"
             ],
@@ -185,6 +185,6 @@
             "nf-test": "0.9.3",
             "nextflow": "25.04.7"
         },
-        "timestamp": "2025-12-08T16:22:32.575754751"
+        "timestamp": "2025-12-08T17:24:50.379906213"
     }
 }
