@@ -3,7 +3,7 @@ process DORADO_BASECALLER {
     label 'process_high'
     label 'process_gpu'
 
-    container "docker.io/nanoporetech/dorado:shae423e761540b9d08b526a1eb32faf498f32e8f22"
+    container "docker.io/nanoporetech/dorado:shaf2aed69855de85e60b363c9be39558ef469ec365"
 
     input:
     tuple val(meta), path(pod5_path)

@@ -18,6 +18,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - when `--all-contexts` parameter is used, default DMR analysis will be conducted using `modkit dmr pair`, because DSS could only perform DMR analysis for CG context.
 - update zenodo link in `README.md`
+- update `dorado` version
+- compressed output of `whatshap phase` and `modkit dmr pair`
+
+### `Dependencies`
+
+| Dependency   | Old version | New version |
+| ------------ | ----------- | ----------- |
+| `dorado`     | 1.1.1       | 1.3.0       |
 
 ## v2.0.0 - [2025-08-25]
 

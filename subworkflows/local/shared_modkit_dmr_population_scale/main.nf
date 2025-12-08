@@ -70,7 +70,7 @@ workflow MODKIT_DMR_POPULATION_SCALE {
 
     versions = versions.mix(DMR_POPULATION_SCALE.out.versions.first())
 
-    DMR_POPULATION_SCALE.out.bed.set { dmr_out }
+    DMR_POPULATION_SCALE.out.bedgz.set { dmr_out }
 
     emit:
     dmr_out

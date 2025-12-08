@@ -78,7 +78,7 @@ workflow MODKIT_DMR_HAPLOTYPE_LEVEL {
 
     versions = versions.mix(DMR_HAPLOTYPE_LEVEL.out.versions.first())
 
-    DMR_HAPLOTYPE_LEVEL.out.bed.set { dmr_out }
+    DMR_HAPLOTYPE_LEVEL.out.bedgz.set { dmr_out }
 
     emit:
     pileup_out
