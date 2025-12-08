@@ -40,7 +40,7 @@ workflow WHATSHAP {
     versions = versions.mix(WHATSHAP_PHASE.out.versions.first())
 
     TABIX_TABIX(WHATSHAP_PHASE.out.vcfgz)
-    
+
     // join inputs before piping into whatshap_haplotag
     input
         .join(WHATSHAP_PHASE.out.vcfgz)

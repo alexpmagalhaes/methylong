@@ -36,7 +36,7 @@ process MODKIT_DMRPAIR {
         $a_params \\
         $b_params \\
         -o ${prefix}.bed
-    
+
     gzip -c ${prefix}.bed > ${prefix}.bed.gz
 
     cat <<-END_VERSIONS > versions.yml
