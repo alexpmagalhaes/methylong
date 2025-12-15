@@ -124,7 +124,6 @@
                 "homo_sapiens_combined.bed.gz:md5,b34d839e921c088341ca346e3574fbdf",
                 "homo_sapiens_hp1.bed.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
                 "homo_sapiens_hp2.bed.gz:md5,d41d8cd98f00b204e9800998ecf8427e",
-                "homo_sapiens_phased.vcf.gz:md5,e016ffe81415ef4eb7623d83c92a3367",
                 "homo_sapiens.bed.gz:md5,401e2a44b482f96d3518c08b9c007936",
                 "homo_sapiens.fastq.gz:md5,9de5335e8d250471458bf563920a3186"
             ],
@@ -155,6 +154,6 @@
             "nf-test": "0.9.3",
             "nextflow": "25.04.2"
         },
-        "timestamp": "2025-12-15T11:42:41.028757405"
+        "timestamp": "2025-12-15T12:20:10.524507656"
     }
 }
