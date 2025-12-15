@@ -6,7 +6,7 @@
 
 include { MODKIT_PILEUP as MODKIT_PILEUP_POPULATION_SCALE } from '../../../../modules/nf-core/modkit/pileup/main'
 include { SAMTOOLS_FAIDX                                  } from '../../../../modules/nf-core/samtools/faidx/main'
-include { TABIX_BGZIPTABIX                                } from '../../../../modules/nf-core/tabix/bgziptabix/main'
+include { TABIX_TABIX                                     } from '../../../../modules/nf-core/tabix/tabix/main'
 
 /*
 ===========================================
@@ -47,12 +47,15 @@ workflow MODKIT_DMR_POPULATION_SCALE_PREPROCESS {
 
     ch_pileup_in.ref.set { ch_ref_in }
 
-    // bgzip and tabix
-    TABIX_BGZIPTABIX(MODKIT_PILEUP_POPULATION_SCALE.out.bed)
+    // tabix
+    TABIX_TABIX(MODKIT_PILEUP_POPULATION_SCALE.out.bedgz)
 
-    versions = versions.mix(TABIX_BGZIPTABIX.out.versions.first())
+    versions = versions.mix(TABIX_TABIX.out.versions.first())
 
-    TABIX_BGZIPTABIX.out.gz_tbi.set { bed_gz }
+    MODKIT_PILEUP_POPULATION_SCALE.out.bedgz
+        .join(TABIX_TABIX.out.index)
+        .map { meta, bedgz, index -> [meta, bedgz, index] }
+        .set { bed_gz }
 
     emit:
     ch_ref_in
