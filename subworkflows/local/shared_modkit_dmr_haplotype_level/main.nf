@@ -6,8 +6,6 @@
 
 include { MODKIT_PILEUP as MODKIT_PILEUP_HAPLOTYPE_LEVEL } from '../../../modules/nf-core/modkit/pileup/main'
 include { MODKIT_DMRPAIR    as DMR_HAPLOTYPE_LEVEL       } from '../../../modules/local/modkit/dmrpair/main'
-include { TABIX_BGZIPTABIX as TABIX_BGZIPTABIX_1         } from '../../../modules/nf-core/tabix/bgziptabix/main'
-include { TABIX_BGZIPTABIX as TABIX_BGZIPTABIX_2         } from '../../../modules/nf-core/tabix/bgziptabix/main'
 include { TABIX_TABIX as TABIX_TABIX_1                   } from '../../../modules/nf-core/tabix/tabix/main'
 include { TABIX_TABIX as TABIX_TABIX_2                   } from '../../../modules/nf-core/tabix/tabix/main'
 
@@ -16,7 +14,6 @@ include { TABIX_TABIX as TABIX_TABIX_2                   } from '../../../module
  * Workflows
 ===========================================
  */
-
 
 workflow MODKIT_DMR_HAPLOTYPE_LEVEL {
     take:
@@ -69,7 +66,6 @@ workflow MODKIT_DMR_HAPLOTYPE_LEVEL {
     .join(TABIX_TABIX_2.out.index)
     .map { meta, bedgz, index -> [meta, bedgz, index] }
     .set { bed_hp2_gz }
-
 
     // Merge bed files with the same [meta]
     bed_hp1_gz

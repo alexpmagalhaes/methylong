@@ -47,17 +47,17 @@
                     },
                     "modkit/callmods": {
                         "branch": "master",
-                        "git_sha": "f274c188ef81409164a74178d15ee3359eeb39d7",
+                        "git_sha": "a7351f25532607d24d18fd85942bfe82d58bcf4b",
                         "installed_by": ["modules"]
                     },
                     "modkit/pileup": {
                         "branch": "master",
-                        "git_sha": "208c242320433d6d32ea7bf5212ee9577c6baa3d",
+                        "git_sha": "f7ce6a825ab399196389a3a5222cdebdd5901be4",
                         "installed_by": ["modules"]
                     },
                     "modkit/repair": {
                         "branch": "master",
-                        "git_sha": "f274c188ef81409164a74178d15ee3359eeb39d7",
+                        "git_sha": "a7351f25532607d24d18fd85942bfe82d58bcf4b",
                         "installed_by": ["modules"]
                     },
                     "multiqc": {

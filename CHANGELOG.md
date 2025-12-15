@@ -8,7 +8,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### `Fixed`
 
 - fixed caching issue in `WHATSHAP_HAPLOTAG` workflow
-- fixed caching issue in `MODKIT_DMR_POPULATION_SCALE` workflow
 
 ### Removed
 
@@ -19,13 +18,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - when `--all-contexts` parameter is used, default DMR analysis will be conducted using `modkit dmr pair`, because DSS could only perform DMR analysis for CG context.
 - update zenodo link in `README.md`
 - update `dorado` version
-- compressed output of `whatshap phase` and `modkit dmr pair`
+- update `modkit` version
+- compressed output of `whatshap phase`, `modkit dmr pair` and `modkit pileup`
 
 ### `Dependencies`
 
 | Dependency | Old version | New version |
 | ---------- | ----------- | ----------- |
 | `dorado`   | 1.1.1       | 1.3.0       |
+| `modkit`   | 0.5.0       | 0.6.0       |
 
 ## v2.0.0 - [2025-08-25]
 
