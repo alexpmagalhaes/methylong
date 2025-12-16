@@ -51,11 +51,11 @@ workflow MODKIT_DMR_HAPLOTYPE_LEVEL {
     //tabix
     TABIX_TABIX_1(bed_hp1)
 
-    versions = versions.mix(TABIX_TABIX_1.out.versions.first())
+    versions = versions.mix(TABIX_TABIX_1.out.versions_tabix.first())
 
     TABIX_TABIX_2(bed_hp2)
 
-    versions = versions.mix(TABIX_TABIX_2.out.versions.first())
+    versions = versions.mix(TABIX_TABIX_2.out.versions_tabix.first())
 
     bed_hp1
     .join(TABIX_TABIX_1.out.index)

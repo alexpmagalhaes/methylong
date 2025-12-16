@@ -50,7 +50,7 @@ workflow MODKIT_DMR_POPULATION_SCALE_PREPROCESS {
     // tabix
     TABIX_TABIX(MODKIT_PILEUP_POPULATION_SCALE.out.bedgz)
 
-    versions = versions.mix(TABIX_TABIX.out.versions.first())
+    versions = versions.mix(TABIX_TABIX.out.versions_tabix.first())
 
     MODKIT_PILEUP_POPULATION_SCALE.out.bedgz
         .join(TABIX_TABIX.out.index)
