@@ -13,7 +13,7 @@ process WHATSHAP_PHASE {
     tuple val(meta3), path(vcf)
 
     output:
-    tuple val(meta), path("*.vcf"), emit: vcf
+    tuple val(meta), path("*.vcf.gz"), emit: vcfgz
     path "versions.yml"           , emit: versions
 
     when:
@@ -22,7 +22,7 @@ process WHATSHAP_PHASE {
     script:
     def args        = task.ext.args ?: ''
     def prefix      = task.ext.prefix ?: "${meta.id}"
-    def output      = "-o ${prefix}_phased.vcf"
+    def output      = "-o ${prefix}.vcf.gz"
     def reference   = fasta ? "--reference=${fasta}" : ""
 
     """
@@ -46,7 +46,7 @@ process WHATSHAP_PHASE {
 
     """
     echo $args
-    touch ${prefix}.vcf
+    echo "" | gzip > ${prefix}.vcf.gz
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":

@@ -6,7 +6,6 @@
 
 include { MODKIT_PILEUP  } from '../../../modules/nf-core/modkit/pileup/main'
 include { SAMTOOLS_FAIDX } from '../../../modules/nf-core/samtools/faidx/main'
-include { PIGZ_COMPRESS  } from '../../../modules/nf-core/pigz/compress/main'
 
 /*
 ===========================================
@@ -50,10 +49,7 @@ workflow INDEX_MODKIT_PILEUP {
 
     versions = versions.mix(MODKIT_PILEUP.out.versions.first())
 
-    MODKIT_PILEUP.out.bed.set { pileup_out }
-
-    PIGZ_COMPRESS(MODKIT_PILEUP.out.bed)
-    versions = versions.mix(PIGZ_COMPRESS.out.versions.first())
+    MODKIT_PILEUP.out.bedgz.set { pileup_out }
 
     emit:
     pileup_out

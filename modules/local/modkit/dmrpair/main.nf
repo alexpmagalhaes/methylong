@@ -4,8 +4,8 @@ process MODKIT_DMRPAIR {
 
     conda "${moduleDir}/environment.yml"
     container "${workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container
-        ? 'https://depot.galaxyproject.org/singularity/ont-modkit:0.5.0--hcdda2d0_2'
-        : 'biocontainers/ont-modkit:0.5.0--hcdda2d0_2'}"
+        ? 'https://depot.galaxyproject.org/singularity/ont-modkit:0.6.0--hcdda2d0_0'
+        : 'biocontainers/ont-modkit:0.6.0--hcdda2d0_0'}"
 
     input:
     tuple val(meta), path(bed_hp1), path(bed_hp1_tbi)
@@ -14,7 +14,7 @@ process MODKIT_DMRPAIR {
 
 
     output:
-    tuple val(meta), path("*.bed"), emit: bed
+    tuple val(meta), path("*.bed.gz"), emit: bedgz
     path "versions.yml", emit: versions
 
     when:
@@ -37,6 +37,8 @@ process MODKIT_DMRPAIR {
         $b_params \\
         -o ${prefix}.bed
 
+    gzip -c ${prefix}.bed > ${prefix}.bed.gz
+
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
         modkit: \$( modkit --version | sed 's/mod_kit //' )
@@ -49,7 +51,7 @@ process MODKIT_DMRPAIR {
 
     """
     echo $args
-    touch ${prefix}.bed
+    echo "" | gzip > ${prefix}.bed.gz
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":

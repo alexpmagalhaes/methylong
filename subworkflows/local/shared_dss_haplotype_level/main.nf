@@ -37,7 +37,7 @@ workflow DSS_HAPLOTYPE_LEVEL {
 
     versions = versions.mix(MODKIT_PILEUP_HAPLOTYPE_LEVEL.out.versions.first())
 
-    MODKIT_PILEUP_HAPLOTYPE_LEVEL.out.bed
+    MODKIT_PILEUP_HAPLOTYPE_LEVEL.out.bedgz
         .flatMap { meta, files ->
             files.collect { file ->
                 [meta, file]
@@ -46,9 +46,9 @@ workflow DSS_HAPLOTYPE_LEVEL {
         .set { pileup_out }
 
     // segment haplotype bed files
-    bed_hp1 = pileup_out.filter { _meta, file -> file.toString().endsWith('_1.bed') }
+    bed_hp1 = pileup_out.filter { _meta, file -> file.toString().endsWith('_1.bed.gz') }
 
-    bed_hp2 = pileup_out.filter { _meta, file -> file.toString().endsWith('_2.bed') }
+    bed_hp2 = pileup_out.filter { _meta, file -> file.toString().endsWith('_2.bed.gz') }
 
     // awk
 

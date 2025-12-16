@@ -46,7 +46,7 @@ workflow DSS_POPULATION_SCALE_PREPROCESS {
     versions = versions.mix(MODKIT_PILEUP_POPULATION_SCALE.out.versions.first())
 
     // gawk
-    GAWK_FOR_DSS(MODKIT_PILEUP_POPULATION_SCALE.out.bed, [], [])
+    GAWK_FOR_DSS(MODKIT_PILEUP_POPULATION_SCALE.out.bedgz, [], [])
 
     versions = versions.mix(GAWK_FOR_DSS.out.versions.first())
 
