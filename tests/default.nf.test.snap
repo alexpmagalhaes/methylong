@@ -92,10 +92,10 @@
                 "ont/homo_sapiens/alignment/homo_sapiens_aligned.bam",
                 "ont/homo_sapiens/alignment/homo_sapiens_aligned.bam.bai",
                 "ont/homo_sapiens/dmr_haplotype_level",
-                "ont/homo_sapiens/dmr_haplotype_level/modkit",
-                "ont/homo_sapiens/dmr_haplotype_level/modkit/homo_sapiens_combined.bed.gz",
-                "ont/homo_sapiens/dmr_haplotype_level/modkit/homo_sapiens_hp1.bed.gz",
-                "ont/homo_sapiens/dmr_haplotype_level/modkit/homo_sapiens_hp2.bed.gz",
+                "ont/homo_sapiens/dmr_haplotype_level/phased_pileup",
+                "ont/homo_sapiens/dmr_haplotype_level/phased_pileup/homo_sapiens_combined.bed.gz",
+                "ont/homo_sapiens/dmr_haplotype_level/phased_pileup/homo_sapiens_hp1.bed.gz",
+                "ont/homo_sapiens/dmr_haplotype_level/phased_pileup/homo_sapiens_hp2.bed.gz",
                 "ont/homo_sapiens/fastqc",
                 "ont/homo_sapiens/fastqc/homo_sapiens_ont_fastqc.html",
                 "ont/homo_sapiens/fastqc/homo_sapiens_ont_fastqc.zip",
@@ -160,6 +160,6 @@
             "nf-test": "0.9.3",
             "nextflow": "25.10.2"
         },
-        "timestamp": "2025-12-18T03:26:30.429346648"
+        "timestamp": "2025-12-18T13:20:33.193131656"
     }
 }
