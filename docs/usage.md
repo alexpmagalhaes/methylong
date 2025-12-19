@@ -167,15 +167,16 @@ default workflow is:
 ```
 preprocessing (ONT only) --> genome alignment --> methylation calling --> SNV calling --> haplotype phasing --> haplotype DMR calling
 ```
-### Examples of commands 
 
-**1. PacBio unmodified BAM as inputs:**  
+### Examples of commands
+
+**1. PacBio unmodified BAM as inputs:**
 
 ```bash
 nextflow run nf-core/methylong --input ./samplesheet_unmodified_bam.csv --outdir ./results -profile docker --pacbio_modcall
 ```
 
-**2. For fiberseq-m6a-calling:**  
+**2. For fiberseq-m6a-calling:**
 
 ```bash
 nextflow run nf-core/methylong --input ./samplesheet_dorado.csv --outdir ./results -profile docker --dorado_modification 5mCG_5hmCG 6mA --fiberseq
@@ -185,7 +186,7 @@ nextflow run nf-core/methylong --input ./samplesheet_dorado.csv --outdir ./resul
 nextflow run nf-core/methylong --input ./samplesheet_pacbio.csv --outdir ./results -profile docker --fiberseq
 ```
 
-**3. For DMR population scale:**  
+**3. For DMR population scale:**
 
 ```bash
 nextflow run nf-core/methylong --input ./samplesheet_dmr.csv --outdir ./results -profile docker --dmr_population_scale --dmr_a group_name_1 --dmr_b group_name_2
@@ -193,10 +194,10 @@ nextflow run nf-core/methylong --input ./samplesheet_dmr.csv --outdir ./results 
 
 > `--dmr_population_scale` must be provided otherwise it will run the haplotype dmr workflow
 
-**4. For calling methylation in CG, CHG and CHH contexts:**  
+**4. For calling methylation in CG, CHG and CHH contexts:**
 
 ```bash
-nextflow run nf-core/methylong --input ./samplesheet_dmr.csv --outdir ./results -profile docker --all_contexts 
+nextflow run nf-core/methylong --input ./samplesheet_dmr.csv --outdir ./results -profile docker --all_contexts
 ```
 
 Note that the pipeline will create the following files in your working directory:
