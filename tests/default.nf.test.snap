@@ -75,8 +75,14 @@
                 "multiqc/multiqc_data/samtools-flagstat-table.txt",
                 "multiqc/multiqc_plots",
                 "multiqc/multiqc_plots/pdf",
+                "multiqc/multiqc_plots/pdf/samtools-flagstat-pct-table.pdf",
+                "multiqc/multiqc_plots/pdf/samtools-flagstat-table.pdf",
                 "multiqc/multiqc_plots/png",
+                "multiqc/multiqc_plots/png/samtools-flagstat-pct-table.png",
+                "multiqc/multiqc_plots/png/samtools-flagstat-table.png",
                 "multiqc/multiqc_plots/svg",
+                "multiqc/multiqc_plots/svg/samtools-flagstat-pct-table.svg",
+                "multiqc/multiqc_plots/svg/samtools-flagstat-table.svg",
                 "multiqc/multiqc_report.html",
                 "ont",
                 "ont/homo_sapiens",
@@ -86,10 +92,10 @@
                 "ont/homo_sapiens/alignment/homo_sapiens_aligned.bam",
                 "ont/homo_sapiens/alignment/homo_sapiens_aligned.bam.bai",
                 "ont/homo_sapiens/dmr_haplotype_level",
-                "ont/homo_sapiens/dmr_haplotype_level/modkit",
-                "ont/homo_sapiens/dmr_haplotype_level/modkit/homo_sapiens_combined.bed.gz",
-                "ont/homo_sapiens/dmr_haplotype_level/modkit/homo_sapiens_hp1.bed.gz",
-                "ont/homo_sapiens/dmr_haplotype_level/modkit/homo_sapiens_hp2.bed.gz",
+                "ont/homo_sapiens/dmr_haplotype_level/phased_pileup",
+                "ont/homo_sapiens/dmr_haplotype_level/phased_pileup/homo_sapiens_combined.bed.gz",
+                "ont/homo_sapiens/dmr_haplotype_level/phased_pileup/homo_sapiens_hp1.bed.gz",
+                "ont/homo_sapiens/dmr_haplotype_level/phased_pileup/homo_sapiens_hp2.bed.gz",
                 "ont/homo_sapiens/fastqc",
                 "ont/homo_sapiens/fastqc/homo_sapiens_ont_fastqc.html",
                 "ont/homo_sapiens/fastqc/homo_sapiens_ont_fastqc.zip",
@@ -154,6 +160,6 @@
             "nf-test": "0.9.3",
             "nextflow": "25.10.2"
         },
-        "timestamp": "2025-12-16T11:44:13.595734315"
+        "timestamp": "2025-12-18T13:20:33.193131656"
     }
 }

@@ -15,6 +15,7 @@ process MODKIT_DMRPAIR {
 
     output:
     tuple val(meta), path("*.bed.gz"), emit: bedgz
+    tuple val(meta), path("*.log")   , emit: log     , optional: true
     path "versions.yml", emit: versions
 
     when:
@@ -52,6 +53,7 @@ process MODKIT_DMRPAIR {
     """
     echo $args
     echo "" | gzip > ${prefix}.bed.gz
+    touch ${prefix}_dmr.log
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":
