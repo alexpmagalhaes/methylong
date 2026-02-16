@@ -16,10 +16,10 @@
                     "gunzip": 1.13
                 },
                 "MODKIT_PILEUP": {
-                    "modkit": "modkit 0.6.0"
+                    "modkit": "modkit 0.6.1"
                 },
                 "MODKIT_PILEUP_HAPLOTYPE_LEVEL": {
-                    "modkit": "modkit 0.6.0"
+                    "modkit": "modkit 0.6.1"
                 },
                 "MODKIT_REPAIR": {
                     "modkit": "0.6.0"
